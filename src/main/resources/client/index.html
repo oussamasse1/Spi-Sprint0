@@ -1,0 +1,69 @@
+<!doctype html>
+<html ng-app="frontApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Index</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./styles/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.9/angular.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular-resource.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular-route.js"></script>
+	<script src="./app.js"></script>
+	<script src="./scripts/controllers/FormationController.js"></script>
+	<script src="./scripts/controllers/CandidatController.js"></script>
+	<script src="./scripts/controllers/EnseignantController.js"></script>
+	<script src="./scripts/controllers/PromotionController.js"></script>
+	<script src="./scripts/controllers/detailEnseignant.js"></script>
+	<script src="./scripts/controllers/detailPromotion.js"></script>
+	<script src="./scripts/controllers/detailCandidat.js"></script>
+	<script src="./scripts/controllers/detailFormation.js"></script>
+	<script src="./scripts/controllers/updateEnseignant.js"></script>
+	<script src="./scripts/controllers/addEnseignant.js"></script>
+  </head>
+  
+  <body >
+  
+  <div class="jumbotron text-center text-primary">
+	  <h1>Bienvenue dans l'espace universitaire</h1>
+	  <p>You are welcome in the university space</p> 
+  </div>
+  
+  <br>
+
+<div class="container">
+  
+  <!-- Nav pills -->
+  <ul class="nav nav-pills" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="pill" href="#!/">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="pill" href="#!/enseignant">Enseignant</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="pill" href="#!formation/">Formation</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="pill" href="#!/candidat">Candidat</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="pill" href="#!/promotion">Promotion</a>
+    </li>
+  </ul>
+
+  
+</div>
+  
+
+   <div class="container">
+     <div ng-view=""></div>
+   </div>
+	
+    
+
+
+</body>
+</html>
